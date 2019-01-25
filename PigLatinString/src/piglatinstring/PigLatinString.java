@@ -31,7 +31,7 @@ public class PigLatinString {
         String lastLetter = last.substring(0,1) + "ay";
         last = last.substring(1,2).toUpperCase() + last.substring(2) + lastLetter;
         
-        System.out.println("Your name in piglating is: " + first + " " + last);
+        System.out.println("Your name in piglatin is: " + first + " " + last);
         
         
     }

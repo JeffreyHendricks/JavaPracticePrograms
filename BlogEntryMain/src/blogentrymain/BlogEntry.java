@@ -14,9 +14,7 @@ public class BlogEntry {
     private String userName;
     private String textEntry;
     private String date;
-    private String month;
-    private int day;
-    private int year;
+   
     
     public BlogEntry()
     {

@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The purpose of this program is to immitate a pizza order app
+ * one class will be used to crerate the pizzas and the order 
+ * and the other class will be made to hold the orders.
  */
 package pizzaorder;
 
@@ -18,8 +18,18 @@ public class PizzaOrder {
         // TODO code application logic here
         Pizza testP = new Pizza("Large",1,1,2);
         Pizza p2 = new Pizza();
-        Pizza p3 = new Pizza();
+        Pizza p3 = new Pizza("Large",1,1,2);
         Pizza p4 = new Pizza("Medium",1,1,3);
+        PizzaOrders order = new PizzaOrders();
+        
+        order.setNumPizzas(1);
+        order.setPizza1(testP);
+        System.out.println(order.calcTotal());
+        order.setNumPizzas(3);
+        order.setPizza2(p4);
+        System.out.println(order.calcTotal());
+        order.setPizza3(p3);
+        System.out.println(order.calcTotal());
         
         System.out.println(testP.getDescription());
         
@@ -39,6 +49,7 @@ public class PizzaOrder {
         System.out.println(p4.getHam());
         System.out.println(testP.getSize());
         System.out.println(p3.getPepperoni());
+
         
     }
     

@@ -21,11 +21,7 @@ public class PizzaOrders {
         pizza2 = null;
         pizza3 = null;
         }
-        else if(numOfPizzas == 1)
-        {
-            Pizza p1 = new Pizza();
-            setPizza1(p1);
-        }
+        
     }
     
     public void setPizza1(Pizza p1)
